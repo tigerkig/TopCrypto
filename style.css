@@ -1,0 +1,219 @@
+body {
+    background:orange;
+    max-width:900px;
+    margin:auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header a {
+    text-decoration: none;
+    color:#333;
+}
+
+.header {
+    display:flex;
+    align-items:center;
+    font-family: 'Glory', sans-serif;
+    color:#333
+}
+
+.header > div:nth-child(2) {
+    margin-left:auto;
+}
+
+.searchBar {
+    height:30px;
+    width:300px;
+    border:1px solid #ccc;
+    border-radius:5px 0px 0px 5px;
+    padding:5px;
+}
+.searchButton {
+    height:42px;
+    width:50px;
+    margin-left:-5px;
+    border:1px solid #ccc;
+    border-radius:0px 5px 5px 0px;
+}
+
+.container {
+    background:#fff;
+    padding:25px;
+    border-radius:5px;
+}
+
+.convert {
+    background:#eee;
+    padding:25px;
+    text-align:center;
+}
+.convertLabel {
+    border:1px solid #ddd;
+    background:#fafafa;
+    padding:12.5px;
+}
+.convertInput {
+    border:1px solid #ddd;
+    padding:14px;
+    margin-left:-5px;
+}
+
+.progressBar {
+    border:1px solid #ddd;
+    background:#eee; 
+    margin-bottom:10px;
+}
+.progress {
+    background:navy;
+}
+
+.progressText {
+    display:flex;
+    margin-bottom:20px;
+}
+.progressText > div {
+    flex:1;
+}
+.progressText > div:first-child{
+    text-align:left;
+}
+.progressText > div:nth-child(2){
+    text-align:center;
+}
+.progressText > div:nth-child(3){
+    text-align:right;
+}
+
+/* tables */
+
+
+.table {
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: .8rem;
+    margin: 0.5rem;
+    line-height: 1.5;
+    border-bottom: 1px solid #eee;
+    flex: 1 1 auto;
+  }
+  
+  .th {
+    font-weight: 700;
+    background-color: #f2f2f2;
+  }
+  
+  .th > .td {
+    white-space: normal;
+    justify-content: center;
+  }
+  
+  .tr {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  
+  .tr:nth-of-type(odd) {
+    background-color: #fff;
+  }
+
+  .td {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 0.5em;
+    word-break: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0px;
+    white-space: nowrap;
+    border-bottom: 1px solid #eee;
+  }
+
+  .td a {
+    text-decoration: none;
+    font-weight:bold;
+    color:#333;
+}
+.pageIndex a {
+    text-decoration: none;
+    color:#333;
+}
+
+.positive {
+    color:green;
+}
+.negative {
+    color:red;
+}
+
+.select {
+    background:transparent;
+    border:none;
+    font-family: 'Roboto', sans-serif;
+    font-size:16px;
+}
+
+.footer {
+    text-align:center;
+    margin-top:20px;
+}
+
+.navLink {
+    font-size:18px;
+    margin:10px;
+}
+.currentPage {
+    color:#666;
+}
+
+.convertIcon {
+    padding:5px;
+}
+.convertIconMobile {
+    padding:5px;
+    display:none;
+}
+
+.convertContainer {
+    display:inline-block;
+}
+
+@media screen and (max-width: 800px) { /* tablet */ 
+    .searchBar {
+        width:50%;
+    }
+    .search-bar {
+        text-align:right;
+        width:100%;
+        
+    }
+    header > div:last-child {
+        padding-right:15px;
+    }
+    .convertContainer {
+        display:block;
+    }
+    .header {
+        padding:10px;
+        position:fixed;
+        background:orange;
+        width:100%;
+    }
+    .block {
+        display:inline-block;
+        height:100px;
+    }
+    .container {
+        border-radius:0px;
+    }
+    .convertIcon {
+        padding:5px;
+        display:none;
+    }
+    .convertIconMobile {
+        padding:5px;
+        display:inline;
+    }
+}
